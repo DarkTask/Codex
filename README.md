@@ -1,23 +1,21 @@
-# Codex
+# Codex Chat Server
 
-This repository contains a sample .NET Aspire project targeting **.NET 9**. The structure was created without the `dotnet` CLI so you may need to adjust it to your environment.
+This repository now contains a simple Node.js chat server built with **Express** and **Socket.io**.
 
-## Structure
+## Setup
 
-- `Directory.Build.props` &mdash; sets the default target framework to `net9.0` for all projects.
-- `src/Codex.AppHost` &mdash; console host referencing the web project.
-- `src/Codex.Web` &mdash; minimal ASP.NET Core web application.
-
-## Building
-
-Install a .NET 9 SDK and run:
+Install dependencies with npm:
 
 ```bash
-dotnet build Codex.sln
+npm install
 ```
 
 ## Running
 
+Start the server:
+
 ```bash
-dotnet run --project src/Codex.Web/Codex.Web.csproj
+npm start
 ```
+
+Open `http://localhost:3000` in your browser. Log in with any username to join the chat room.
